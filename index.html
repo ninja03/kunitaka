@@ -49,6 +49,7 @@
       const td = cr("td");
       td.style.minWidth = "8em";
       td.style.wordBreak = "break-all";
+      /*
       const n = val.match(/<a href=(.+)>(.+)<\/a>/);
       if (n) {
         const url = n[1];
@@ -57,6 +58,8 @@
       } else {
         td.textContent = val;
       }
+      */
+      td.innerHTML = val;
       tr.appendChild(td);
     }
     return tbl;
